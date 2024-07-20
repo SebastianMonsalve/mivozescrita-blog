@@ -1,0 +1,127 @@
+.blog-info {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+}
+.blog-info-container {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.blog-info-title {
+  width: 100%;
+  padding: 0 5rem;
+  font-size: 3em;
+  text-wrap: balance;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--Black);
+}
+.card-blog-info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-elevation-medium);
+  background-color: var(--WhiteSmoke);
+}
+.blog-info-image {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 1rem 0 0 1rem;
+}
+.blog-info-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-info-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex: 1.2;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+.blog-info-info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem;
+  padding-top: 0;
+  border-bottom: 0.1rem solid var(--DarkViolet);
+}
+.blog-info-admin {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  overflow: hidden;
+}
+.blog-info-admin img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.blog-info-created {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--Black);
+}
+.blog-info-more {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.blog-info-category {
+  padding: 0.2rem 1rem;
+  color: var(--SecondColor);
+  border: 0.1rem solid var(--SecondColor);
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 1rem;
+}
+.blog-info-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.4rem;
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--Black);
+}
+.blog-info-text {
+  width: 100%;
+  height: auto;
+  display: flex;
+  color: var(--Black);
+  font-size: 1.2em;
+  text-wrap: balance;
+  flex-direction: column;
+  padding: 1rem 0;
+}

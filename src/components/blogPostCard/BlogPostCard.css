@@ -1,0 +1,202 @@
+.blog-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.blog-home-container {
+  padding: 2.5rem 1.25rem;
+  margin: 0 auto;
+  width: 75vw;
+  min-height: 100vh;
+}
+.blog-cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.blog-home-large {
+  flex: 1.2;
+  margin-right: 1rem;
+}
+.blog-subtitle {
+  font-size: 2em;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  color: var(--Black);
+}
+.blog-card-large {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.5rem;
+  box-shadow: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0);
+  background-color: var(--WhiteSmoke);
+  transition: all 0.2s all;
+  box-shadow: var(--shadow-elevation-medium);
+}
+.blog-card-large:hover {
+  border: 0.1rem solid var(--DarkViolet);
+  transition: all 0.2s all;
+  box-shadow: var(--shadow-elevation-medium);
+}
+.blog-card-large:hover .blog-card-large-image img {
+  transform: scale(1.06) rotate(2deg);
+  transition: all 0.3s;
+}
+.blog-card-large-image {
+  width: 100%;
+  height: 30rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.blog-card-large-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  transition: all 0.3s;
+}
+.blog-card-large-text {
+  color: var(--Black);
+}
+.blog-card-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+.blog-card-info h2 {
+  color: var(--LightGray);
+  font-weight: 500;
+  font-size: 1em;
+}
+.blog-card-large-title {
+  font-size: 2em;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+.blog-card-large-description {
+  font-size: 1em;
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.blog-home-small {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+.blog-card-small {
+  width: 100%;
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  box-shadow: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0);
+  background-color: var(--WhiteSmoke);
+  transition: all 0.2s;
+  box-shadow: var(--shadow-elevation-medium);
+}
+.blog-card-small:hover {
+  border: 0.1rem solid var(--DarkViolet);
+  transition: all 0.2s;
+}
+.blog-card-small:hover .blog-card-small-image img {
+  transform: scale(1.06) rotate(2deg);
+  transition: all 0.3s;
+}
+.blog-card-small-image {
+  background-color: var(--Black);
+  width: 15rem;
+  height: 12rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.blog-card-small-image img {
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  mask-image: linear-gradient(black 50%, transparent);
+  transition: all 0.3s;
+}
+.blog-card-small-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0.5rem;
+  color: var(--WhiteSmoke);
+}
+.blog-card-small-text {
+  width: calc(100% - 15rem);
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.blog-card-small-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  color: var(--Black);
+}
+.blog-card-small-description {
+  font-size: 1em;
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: var(--Black);
+}
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.not-found img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+}
+.not-found p {
+  font-size: 1em;
+  font-weight: 600;
+  padding: 1rem;
+  color: var(--Black);
+}
+.see-more-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.see-more-button {
+  padding: 0.8rem 2rem;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: transparent;
+  color: var(--SecondColor);
+  border: 0.1rem solid var(--SecondColor);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.see-more-button:hover {
+  background-color: var(--SecondColor);
+  color: var(--WhiteSmoke);
+  transition: all 0.3s ease-in-out;
+}

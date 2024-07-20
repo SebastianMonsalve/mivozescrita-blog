@@ -1,0 +1,228 @@
+.dashboard-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+.dashboard-content {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: white;
+  background-image: url(/bgStars.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+.dashboard-profile {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  margin: 1rem;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: sticky;
+  top: 6rem;
+  background-color: var(--WhiteSmoke);
+  box-shadow: var(--shadow-elevation-medium);
+}
+.dashboard-profile-image {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, var(--DarkViolet), var(--SecondColor));
+}
+.dashboard-profile-image img {
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.dashboard-profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.profile-name {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--Black);
+}
+.profile-email,
+.profile-count {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--LightGray);
+  margin-bottom: 0.5rem;
+}
+.dashboard-options {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.dashboard-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-button {
+  width: 70%;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--SecondColor);
+  color: var(--WhiteSmoke);
+  font-size: 1.1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.dashboard-button:hover {
+  background-color: var(--DarkViolet);
+  transition: all 0.3s ease-in-out;
+  box-shadow: var(--shadow-elevation-medium);
+}
+.blog-table-section {
+  width: 100%;
+  height: auto;
+  flex: 4;
+  background-color: white;
+}
+.dashboard-blogs-cards {
+  width: 100%;
+  height: auto;
+  padding: 1rem 2rem;
+  padding-bottom: 4rem;
+  columns: 2;
+  column-gap: 1.5rem;
+  overflow: hidden;
+}
+.dashboard-card {
+  width: 100%;
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: default;
+  border: 0.1rem solid rgba(0, 0, 0, 0);
+  background-color: var(--WhiteSmoke);
+  transition: all 0.2s;
+  box-shadow: var(--shadow-elevation-medium);
+}
+.dashboard-card:hover {
+  border: 0.1rem solid var(--DarkViolet);
+  transition: all 0.2s;
+}
+.dashboard-card:hover .dashboard-card-image img {
+  transform: scale(1.06) rotate(2deg);
+  transition: all 0.3s;
+}
+.dashboard-card-image {
+  background-color: var(--Black);
+  width: 15rem;
+  height: 12rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.dashboard-card img {
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  mask-image: linear-gradient(black 50%, transparent);
+  transition: all 0.3s;
+}
+.dashboard-card-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0.6rem;
+  left: 1rem;
+  color: var(--WhiteSmoke);
+}
+
+.dashboard-card-text {
+  width: calc(100% - 15rem);
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-card-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  color: var(--Black);
+}
+.dashboard-card-description {
+  font-size: 1em;
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: var(--Black);
+}
+.dasboard-button-delete {
+  width: 14rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--SecondColor);
+  color: var(--WhiteSmoke);
+  font-size: 1.1em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.dasboard-button-delete:hover {
+  background-color: var(--DarkViolet);
+  transition: all 0.3s ease-in-out;
+  box-shadow: var(--shadow-elevation-medium);
+}
+.dashboard-not-found {
+  width: 100%;
+  columns: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-not-found img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+}
+.dashboard-not-found p {
+  font-size: 1em;
+  font-weight: 600;
+  padding: 1rem;
+  color: var(--Black);
+}

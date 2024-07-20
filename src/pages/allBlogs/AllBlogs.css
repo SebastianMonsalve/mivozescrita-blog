@@ -1,0 +1,141 @@
+/* .all-bg {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("/public/bgStars.png");
+  position: relative;
+}
+.all-bg .bg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+} */
+.all-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75vw;
+  min-height: 100vh;
+  padding: 6rem 1.25rem;
+  margin: 0 auto;
+  background-color: white;
+}
+.all-title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.all-title h3 {
+  font-size: 2em;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  color: var(--Black);
+}
+.all-line {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  width: 20rem;
+  height: 0.4rem;
+  border-radius: 1rem;
+  z-index: 1;
+  background-color: var(--DarkViolet);
+}
+.all-blogs-container {
+  width: 100%;
+  height: auto;
+  columns: 3;
+  column-gap: 2rem;
+}
+.all-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  border: 0.1rem solid rgba(0, 0, 0, 0);
+  background-color: var(--WhiteSmoke);
+  box-shadow: var(--shadow-elevation-medium);
+  transition: all 0.2s all;
+}
+.all-card:hover {
+  border: 0.1rem solid var(--DarkViolet);
+  transition: all 0.2s all;
+}
+.all-card:hover .all-card-image img {
+  transform: scale(1.06) rotate(2deg);
+  transition: all 0.3s;
+}
+.all-card-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 1rem;
+  display: flex;
+  position: relative;
+  background-color: var(--Black);
+}
+.all-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask-image: linear-gradient(black 70%, transparent);
+  transition: all 0.3s;
+}
+.all-card-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0 0.8rem;
+  position: absolute;
+  font-size: 1em;
+  bottom: 0.4rem;
+  left: 0;
+  color: var(--WhiteSmoke);
+}
+.all-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+}
+.all-blog-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  color: var(--Black);
+}
+.all-description {
+  font-size: 1em;
+  text-wrap: balance;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  color: var(--Black);
+}
+.all-not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.all-not-found img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+}
+.all-not-found p {
+  font-size: 1em;
+  font-weight: 600;
+  padding: 1rem;
+  color: var(--Black);
+}
