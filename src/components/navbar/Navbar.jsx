@@ -86,12 +86,14 @@ l0 -280 -28 0 c-52 0 -215 32 -292 57 -176 57 -346 157 -481 281 -70 65 -189
         </Link>
         <div className="nav-items">
           <Link to="/" className="nav-item">
-            Inicio
+            <i className="fa-solid fa-house" />
+            <p>Inicio</p>
           </Link>
           <Link to="/allblogs" className="nav-item">
-            Publicaciones
+            <i className="fa-solid fa-folder-open" />
+            <p>Publicaciones</p>
           </Link>
-          <div className="nav-item">
+          <div className="nav-item-search">
             <SearchDialog />
           </div>
           {admin ? (

@@ -98,3 +98,60 @@
 .footer-container3 a:hover {
   color: var(--SecondColor);
 }
+
+@media (max-width: 1024px) {
+  .footer-container3 a {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 4rem;
+    align-items: center;
+  }
+  .footer-container1 {
+    flex: content;
+  }
+  .footer-container2 {
+    flex: content;
+    align-items: center;
+  }
+  .footer-container3 {
+    flex: content;
+    align-items: center;
+  }
+  .footer-container3 a {
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+}
+@media (max-width: 520px) {
+  .footer-container1-logo svg {
+    width: 5rem;
+  }
+  .footer-container1-info span {
+    font-size: 1.2em;
+  }
+  .footer-container1-info p {
+    font-size: 0.8em;
+  }
+  .footer-container2 h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+  }
+  .footer-container2 a {
+    font-size: 0.9em;
+    margin-bottom: 0.2rem;
+  }
+  .footer-container3 h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+  }
+  .footer-container3 a {
+    font-size: 0.9em;
+  }
+}

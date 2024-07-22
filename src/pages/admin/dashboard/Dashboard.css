@@ -1,5 +1,5 @@
 .dashboard-section {
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -106,18 +106,15 @@
 }
 .blog-table-section {
   width: 100%;
-  height: auto;
   flex: 4;
   background-color: white;
 }
 .dashboard-blogs-cards {
   width: 100%;
-  height: auto;
   padding: 1rem 2rem;
   padding-bottom: 4rem;
   columns: 2;
   column-gap: 1.5rem;
-  overflow: hidden;
 }
 .dashboard-card {
   width: 100%;
@@ -225,4 +222,25 @@
   font-weight: 600;
   padding: 1rem;
   color: var(--Black);
+}
+
+@media (max-width: 1207px) {
+  .dashboard-blogs-cards {
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem;
+    padding-bottom: 4rem;
+    columns: 1;
+    column-gap: 1.5rem;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboard-section {
+    padding-top: 1rem;
+  }
+  .dashboard-profile {
+    top: 1rem;
+  }
 }

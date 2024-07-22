@@ -164,3 +164,16 @@
   letter-spacing: 0.15rem;
   transition: all 0.3s ease-in-out;
 }
+
+@media (max-width: 1024px) {
+  .login-section-card {
+    width: 40%;
+    padding: 1rem 5rem;
+  }
+}
+@media (max-width: 800px) {
+  .login-section-card {
+    width: 90%;
+    height: 90%;
+  }
+}

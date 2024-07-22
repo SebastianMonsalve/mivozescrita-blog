@@ -75,7 +75,7 @@
   font-size: 1.5em;
 }
 .modal-card-container {
-  width: 95%;
+  width: 100%;
   padding: 0 1rem;
   padding-bottom: 2rem;
   overflow-y: auto;
@@ -83,11 +83,11 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
 }
 .modal-card {
   width: 18rem;
-  height: 25rem;
+  height: 20rem;
   overflow: hidden;
   position: relative;
   padding: 1rem;
@@ -128,12 +128,12 @@
   color: var(--WhiteSmoke);
   position: absolute;
   bottom: 0;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 600;
 }
 .modal-card-title {
   padding: 0.5rem 1rem;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 600;
   color: var(--Black);
 }
@@ -151,7 +151,6 @@
   border-radius: 1rem;
   background: var(--LightGray);
 }
-
 .all-not-found {
   display: flex;
   flex-direction: column;
@@ -164,4 +163,93 @@
   max-width: 100%;
   height: auto;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+  .modal-container {
+    width: 90vw;
+  }
+}
+@media (max-width: 520px) {
+  .modal-container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+  .close-modal {
+    right: 0.8rem;
+    top: 0.5rem;
+  }
+  .modal-title {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  .modal-line {
+    margin-top: 0.2rem;
+    width: 80%;
+    height: 0.5rem;
+  }
+  .modal-description {
+    width: 95%;
+    font-size: 0.7em;
+  }
+  .input-container {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .input-container input {
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+  .input-container i {
+    font-size: 1.2em;
+  }
+  .modal-card-container {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+  .modal-card {
+    width: 90%;
+    height: 14rem;
+    padding: 0.5rem;
+  }
+  .modal-card-image {
+    width: 100%;
+    height: 65%;
+  }
+  .modal-card-admin {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .modal-card-title {
+    padding: 0.4rem;
+    font-size: 1em;
+  }
+  .modal-card-date {
+    font-size: 0.8em;
+  }
+  .modal-card-container::-webkit-scrollbar {
+    width: 0.2rem;
+  }
+
+  .all-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+  }
+  .all-not-found img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
 }

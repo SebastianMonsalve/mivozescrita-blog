@@ -1,5 +1,5 @@
 import { Fragment, useContext, useState, useRef, useEffect } from "react";
-import { Dialog, DialogBody, Input } from "@material-tailwind/react";
+import { Dialog, DialogBody } from "@material-tailwind/react";
 import myContext from "../../context/data/myContext";
 import { useNavigate } from "react-router";
 import "./SearchDialog.css";
@@ -61,7 +61,7 @@ export default function SearchDialog() {
           </p>
           <div className="input-container">
             <i className="fa-solid fa-magnifying-glass" />
-            <Input
+            <input
               color="white"
               type="search"
               placeholder="Escriba en este campo"

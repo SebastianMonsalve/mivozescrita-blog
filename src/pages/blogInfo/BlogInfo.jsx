@@ -130,7 +130,7 @@ function BlogInfo() {
                   <div className="blog-info-more">
                     <div className="blog-info-date">
                       <i className="fa-regular fa-clock" />
-                      <p>Publicado el {getBlogs?.date}</p>
+                      <p>Publicado en {getBlogs?.date}</p>
                     </div>
                     <p className="blog-info-category">
                       #{getBlogs?.blogs?.category}
