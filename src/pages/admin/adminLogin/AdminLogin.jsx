@@ -4,16 +4,16 @@ import { useNavigate } from "react-router";
 import toast from "react-hot-toast";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../firebase/FirebaseConfig";
+import Loader from "../../../components/loader/Loader";
 import "./AdminLogin.css";
 
 export default function AdminLogin() {
-  const context = useContext(myContext);
-  const { mode } = context;
-
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const context = useContext(myContext);
+  const { loading, setloading } = context;
 
   const login = async () => {
     if (!email || !password) {

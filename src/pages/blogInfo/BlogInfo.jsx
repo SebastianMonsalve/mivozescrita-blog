@@ -101,14 +101,14 @@ function BlogInfo() {
   useEffect(() => {
     getcomment();
     window.scrollTo(0, 0);
-  }, []);
+  }, [loading]);
 
   return (
     <Layout>
-      {loading ? (
-        <Loader />
-      ) : (
-        <section className="blog-info">
+      <section className="blog-info">
+        {loading ? (
+          <Loader />
+        ) : (
           <div className="blog-info-container">
             <h1 className="blog-info-title">{getBlogs?.blogs?.title}</h1>
             <div className="card-blog-info">
@@ -147,16 +147,16 @@ function BlogInfo() {
               </div>
             </div>
           </div>
-          <Comment
-            addComment={addComment}
-            commentText={commentText}
-            setcommentText={setCommentText}
-            allComment={allComment}
-            fullName={fullName}
-            setFullName={setFullName}
-          />
-        </section>
-      )}
+        )}
+        <Comment
+          addComment={addComment}
+          commentText={commentText}
+          setcommentText={setCommentText}
+          allComment={allComment}
+          fullName={fullName}
+          setFullName={setFullName}
+        />
+      </section>
     </Layout>
   );
 }

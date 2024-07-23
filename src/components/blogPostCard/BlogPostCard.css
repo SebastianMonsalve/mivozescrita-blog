@@ -230,11 +230,12 @@
     flex: content;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .blog-home-container {
     padding: 1rem;
     margin-top: 1rem;
     width: 100vw;
+    padding-bottom: 5rem;
   }
   .blog-card-large {
     padding: 0.5rem;

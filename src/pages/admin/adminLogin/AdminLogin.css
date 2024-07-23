@@ -177,3 +177,58 @@
     height: 90%;
   }
 }
+@media (max-width: 520px) {
+  .login-section-card {
+    width: 95%;
+    height: 80%;
+    padding: 1rem;
+  }
+  .login-goback {
+    width: 2rem;
+    height: 2rem;
+    padding-top: 0.1rem;
+  }
+  .login-goback i {
+    font-size: 1.2em;
+  }
+  .login-logo {
+    top: 1rem;
+    right: 1rem;
+  }
+  .login-logo svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  .login-logo h1 {
+    font-size: 1em;
+  }
+  .login-titles h1 {
+    font-size: 1.8em;
+  }
+  .login-titles span {
+    font-size: 1.4em;
+  }
+  .login-form {
+    gap: 0.6rem;
+  }
+  .login-input-container {
+    height: 4rem;
+    border: 0.1rem solid var(--LightGray);
+  }
+  .login-input-container i {
+    font-size: 1em;
+    border-right: 0.1rem solid var(--LightGray);
+  }
+  .login-input h2 {
+    font-size: 0.8em;
+  }
+  .login-input input {
+    font-size: 1em;
+  }
+  .login-button {
+    width: 65%;
+    height: 3rem;
+    font-size: 1em;
+    letter-spacing: 0.05rem;
+  }
+}
