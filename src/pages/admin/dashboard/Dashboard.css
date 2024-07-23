@@ -144,6 +144,7 @@
   height: 12rem;
   border-radius: 1rem;
   overflow: hidden;
+  cursor: pointer;
 }
 .dashboard-card img {
   width: 110%;
@@ -182,27 +183,6 @@
   -webkit-line-clamp: 2;
   overflow: hidden;
   color: var(--Black);
-}
-.dasboard-button-delete {
-  width: 14rem;
-  height: 3rem;
-  border-radius: 1rem;
-  border: none;
-  background-color: var(--SecondColor);
-  color: var(--WhiteSmoke);
-  font-size: 1.1em;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding-left: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-.dasboard-button-delete:hover {
-  background-color: var(--DarkViolet);
-  transition: all 0.3s ease-in-out;
-  box-shadow: var(--shadow-elevation-medium);
 }
 .dashboard-not-found {
   width: 100%;

@@ -4,6 +4,7 @@ import myContext from "../../../context/data/myContext";
 import parse from "html-react-parser";
 import { Link, useNavigate } from "react-router-dom";
 import Loader from "../../../components/loader/Loader";
+import DeleteConfirm from "../../../components/DeleteConfirm/DeleteConfirm";
 import "./Dashboard.css";
 
 function Dashboard() {
@@ -66,12 +67,11 @@ function Dashboard() {
                   getAllBlog.map((item, index) => {
                     const { thumbnail, date, id } = item;
                     return (
-                      <div
-                        key={index}
-                        className="dashboard-card"
-                        // onClick={() => navigate(`/bloginfo/${id}`)}
-                      >
-                        <div className="dashboard-card-image">
+                      <div key={index} className="dashboard-card">
+                        <div
+                          className="dashboard-card-image"
+                          onClick={() => navigate(`/bloginfo/${id}`)}
+                        >
                           <img
                             src={thumbnail}
                             alt="image post"
@@ -91,13 +91,7 @@ function Dashboard() {
                           <div className="dashboard-card-description">
                             {parse(truncateContent(item.blogs.content))}
                           </div>
-                          <button
-                            className="dasboard-button-delete"
-                            onClick={() => deleteBlogs(id)}
-                          >
-                            <i className="fa-regular fa-trash-can" />
-                            Eliminar
-                          </button>
+                          <DeleteConfirm id={id} deleteBlogs={deleteBlogs} />
                         </div>
                       </div>
                     );
