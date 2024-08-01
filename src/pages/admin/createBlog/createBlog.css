@@ -197,3 +197,92 @@
   border-radius: 1rem;
   background: var(--SecondColor);
 }
+
+@media (max-width: 1024px) {
+  .create-section-card {
+    width: 60%;
+    height: 95%;
+    padding: 1rem 5rem;
+  }
+  .create-section-card::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: var(--WhiteSmoke);
+  }
+}
+@media (max-width: 800px) {
+  .create-section-card {
+    width: 90%;
+    height: 95%;
+    padding: 1rem 5rem;
+  }
+}
+@media (max-width: 520px) {
+  .create-section {
+    background-image: none;
+  }
+  .create-section-card {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 0;
+  }
+  .create-goback {
+    top: 0.5rem;
+    left: 0.6rem;
+    width: 2rem;
+    height: 2rem;
+    padding-top: 0.1rem;
+  }
+  .create-goback i {
+    font-size: 1.2em;
+  }
+  .create-logo {
+    top: 1rem;
+    right: 1rem;
+  }
+  .create-logo svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  .create-logo h1 {
+    font-size: 1em;
+  }
+  .create-title {
+    margin-bottom: 0;
+  }
+  .create-title h1 {
+    font-size: 1.5em;
+  }
+  .create-title span {
+    font-size: 1.8em;
+  }
+  .create-upload-image {
+    width: 8rem;
+    height: 8rem;
+  }
+  .create-form {
+    gap: 0.6rem;
+  }
+  .create-input-container {
+    height: 4rem;
+    border: 0.1rem solid var(--LightGray);
+  }
+  .create-input-container i {
+    font-size: 1em;
+    border-right: 0.1rem solid var(--LightGray);
+  }
+  .create-input h2 {
+    font-size: 0.8em;
+  }
+  .create-input input {
+    font-size: 1em;
+  }
+  .create-button {
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+    font-size: 1em;
+  }
+  .create-section-card::-webkit-scrollbar {
+    width: 0;
+  }
+}

@@ -53,7 +53,7 @@ export default function DeleteConfirm({ id, deleteBlogs }) {
             ¿Estás segura de que deseas eliminar esta publicación? Esta acción
             no se puede deshacer.
           </p>
-          <div class="delete-modal-actions">
+          <div className="delete-modal-actions">
             <button
               className="delete-button cancel-button"
               onClick={handleOpen}

@@ -52,7 +52,10 @@ function Dashboard() {
                   Crear publicación
                 </button>
               </Link>
-              <button className="dashboard-button" onClick={logout}>
+              <button
+                className="dashboard-button close-button"
+                onClick={logout}
+              >
                 <i className="fa-solid fa-power-off" />
                 Cerrar sesión
               </button>

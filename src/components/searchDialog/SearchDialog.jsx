@@ -46,7 +46,7 @@ export default function SearchDialog() {
   return (
     <Fragment>
       <div onClick={handleOpen} title="Buscar blog">
-        <i className="fa-solid fa-magnifying-glass" />
+        <i className="bx bx-search-alt" />
       </div>
       <Dialog className="modal" open={open} handler={handleOpen}>
         <DialogBody className="modal-container" ref={modalContainerRef}>
@@ -60,7 +60,7 @@ export default function SearchDialog() {
             categoría o buscando directamente por su título.
           </p>
           <div className="input-container">
-            <i className="fa-solid fa-magnifying-glass" />
+            <i className="bx bx-search-alt" />
             <input
               color="white"
               type="search"

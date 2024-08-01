@@ -36,6 +36,7 @@
   height: 12rem;
   border-radius: 50%;
   overflow: hidden;
+  padding: 0.3rem;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
@@ -43,8 +44,8 @@
   background: linear-gradient(90deg, var(--DarkViolet), var(--SecondColor));
 }
 .dashboard-profile-image img {
-  width: 95%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -206,12 +207,8 @@
 
 @media (max-width: 1207px) {
   .dashboard-blogs-cards {
-    width: 100%;
     height: auto;
-    padding: 1rem 2rem;
-    padding-bottom: 4rem;
     columns: 1;
-    column-gap: 1.5rem;
     overflow: hidden;
   }
 }
@@ -222,5 +219,138 @@
   }
   .dashboard-profile {
     top: 1rem;
+  }
+}
+@media (max-width: 775px) {
+  .dashboard-content {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  .dashboard-profile {
+    flex: content;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0.5rem;
+    padding-top: 1.2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: fixed;
+    flex-wrap: wrap;
+    top: -1rem;
+    z-index: 10;
+    background-color: var(--WhiteSmoke);
+    box-shadow: var(--shadow-elevation-medium);
+  }
+  .dashboard-profile-image {
+    flex: 1;
+    width: 5rem;
+    height: 5rem;
+  }
+  .dashboard-profile-info {
+    flex: 4;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+  .profile-name {
+    font-size: 1.2em;
+  }
+  .profile-email,
+  .profile-count {
+    font-size: 0.75em;
+    margin-bottom: 0;
+  }
+  .dashboard-options {
+    flex-direction: row-reverse;
+  }
+  .dashboard-button {
+    width: 100%;
+    padding: 0.8rem;
+    gap: 0.3rem;
+    font-size: 0.8em;
+    font-weight: 600;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .close-button {
+    width: 70%;
+    background-color: brown;
+  }
+  .blog-table-section {
+    flex: content;
+  }
+  .dashboard-blogs-cards {
+    width: 100%;
+    margin-top: 9rem;
+    height: auto;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    columns: 1;
+    column-gap: 1.5rem;
+    overflow: hidden;
+  }
+  .dashboard-card-image {
+    background-color: var(--Black);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .dashboard-card img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    mask-image: linear-gradient(black 50%, transparent);
+    transition: all 0.3s;
+  }
+  .dashboard-card-info {
+    display: none;
+  }
+  .dashboard-card-text {
+    width: calc(100% - 4rem);
+    padding-left: 0.5rem;
+    flex-direction: row;
+  }
+  .dashboard-card-title {
+    font-size: 0.9em;
+    font-weight: 500;
+    padding-right: 3.2rem;
+    padding-bottom: 0;
+  }
+  .dashboard-card-description {
+    display: none;
+  }
+  .dashboard-not-found {
+    width: 100%;
+    columns: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dashboard-not-found img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+  }
+  .dashboard-not-found p {
+    font-size: 1em;
+    font-weight: 600;
+    padding: 1rem;
+    color: var(--Black);
   }
 }
