@@ -52,6 +52,7 @@ export const ProtectedRouteForAdmin = ({ children }) => {
   if (admin?.user?.email === import.meta.env.VITE_ADMIN_EMAIL) {
     return children;
   } else {
+    console.log(admin, import.meta.env.VITE_ADMIN_EMAIL);
     return <Navigate to={"/adminlogin"} />;
   }
 };
