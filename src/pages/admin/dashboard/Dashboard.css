@@ -200,6 +200,7 @@
 }
 .dashboard-not-found p {
   font-size: 1em;
+  text-align: center;
   font-weight: 600;
   padding: 1rem;
   color: var(--Black);

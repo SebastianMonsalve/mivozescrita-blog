@@ -31,9 +31,11 @@
   gap: 1rem;
   color: var(--Black);
 }
-.nav-logo:hover svg {
-  transform: rotate(360deg);
-  transition: all 1s ease-in-out;
+@media (hover: hover) {
+  .nav-logo:hover svg {
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out;
+  }
 }
 .nav-logo svg {
   width: auto;
@@ -66,10 +68,12 @@
 .nav-item i {
   display: none;
 }
-.nav-item:hover p,
-.nav-item-search:hover {
-  color: var(--DarkViolet);
-  transform: scale(1.1);
+@media (hover: hover) {
+  .nav-item:hover p,
+  .nav-item-search:hover {
+    color: var(--DarkViolet);
+    transform: scale(1.1);
+  }
 }
 .nav-item img {
   width: 3rem;

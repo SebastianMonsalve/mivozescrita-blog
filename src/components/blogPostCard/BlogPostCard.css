@@ -175,6 +175,7 @@
   object-fit: cover;
 }
 .not-found p {
+  text-align: center;
   font-size: 1em;
   font-weight: 600;
   padding: 1rem;
